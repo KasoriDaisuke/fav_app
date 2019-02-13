@@ -1,0 +1,2 @@
+module FavControllerHelper
+end
