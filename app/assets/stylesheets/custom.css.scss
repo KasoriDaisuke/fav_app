@@ -1,1 +1,33 @@
 @import "bootstrap";
+
+/* universal */
+
+body {
+  background-color: dimgray;
+  padding-top: 100px;
+}
+
+h1 {
+  color: white;
+}
+
+/* header */
+
+.header{
+  height: 100px;
+  background-color: black;
+}
+
+/* footer */
+
+.footer{
+  background-color: black;
+}
+
+/* tweet */
+.tweet{
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  background-color: white;
+}
