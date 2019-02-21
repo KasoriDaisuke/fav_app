@@ -16,6 +16,18 @@ h1 {
 .header{
   height: 100px;
   background-color: black;
+
+  ul{
+    float: right;
+    }
+
+  li{
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+    color: white;
+    }
+
 }
 
 /* footer */
@@ -26,8 +38,27 @@ h1 {
 
 /* tweet */
 .tweet{
+  overflow: hidden;
   padding: 10px;
   margin: 10px;
   width: auto;
   background-color: white;
+
+  a,p {
+    font-size: 20px;
+    }
+
+  ul{
+    padding-left: 0px;
+    }
+
+  li{
+    padding: 20px 20px;
+    float: left;
+    display: block;
+    background-color: black;
+    margin-right: 5px;
+    margin-top: 5px;
+    }
+
 }
