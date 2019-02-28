@@ -16,18 +16,79 @@ h1 {
 .header{
   height: 100px;
   background-color: black;
+
+  ul{
+    float: right;
+    }
+
+  li{
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+    color: white;
+    }
+
+}
+
+/* side */
+.side{
+ width: 200px;
+ height: 500px;
+ background-color: white;
+ float: left;
+ margin: 10px;
+
+li {
+ list-style:none;
+}
+ul{
+ padding-left: 0px;
+}
 }
 
 /* footer */
 
 .footer{
   background-color: black;
+  p {
+    color:white;
+    text-align: center;
+}
+
 }
 
 /* tweet */
 .tweet{
+  overflow: hidden;
   padding: 10px;
   margin: 10px;
   width: auto;
   background-color: white;
+
+  span{
+  float: left;
+}
+  a,p {
+    font-size: 20px;
+    }
+
+  ul{
+    padding-left: 0px;
+    }
+
+  li{
+    padding: 20px 20px;
+    float: left;
+    display: block;
+    background-color: black;
+    margin-right: 5px;
+    margin-top: 5px;
+    }
+
+  .fav_count{
+    float:left;
+    margin-right:10px;
+    display: inline-block;
+}
+
 }
