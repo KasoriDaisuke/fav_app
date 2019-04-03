@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Micropost.create(content: "test", user_id: 1, fav_count: 5)
+Micropost.create(content: "test2", user_id: 2, fav_count: 15)
+Micropost.create(content: "test3", user_id: 3, fav_count: 25)
+Micropost.create(content: "test4", user_id: 4, fav_count: 35)

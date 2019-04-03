@@ -36,3 +36,7 @@
   <%= link_to "お気に入りされたツイート", show_path %>
   </span>
 </div>
+
+<li>
+  <%= @microposts.find_by(user_id: 2).content %>
+</li>
