@@ -1,42 +1,29 @@
-<form>
 <p>並び変え</p>
+<%= form_tag("/fav_controller/index") do %>
 <select name="sort">
 <option value="many">いいねが多い順</option>
 <option value="few">いいねが少ない順</option>
 <option value="new">ツイートが新しい順</option>
 <option value="old">ツイートが古い順</option>
-</select></form>
+</select>
+<% end %>
 
+<% @microposts.each do |post| %>
 <div class="tweet">
   <div class= "fav_count">
-  <p>999</p>
+  <%= post.fav_count %>
   <p>Fav</p>
   </div>
   <span>
-  <%= link_to "お気に入りされたツイート", show_path %>
+  <%= link_to post.content, show_path %>
   </span>
 </div>
+<% end %>
 
-<div class="tweet">
-  <div class= "fav_count">
-  <p>999</p>
-  <p>Fav</p>
-  </div>
-  <span>
-  <%= link_to "お気に入りされたツイート", show_path %>
-  </span>
-</div>
-
-<div class="tweet">
-  <div class= "fav_count">
-  <p>999</p>
-  <p>Fav</p>
-  </div>
-  <span>
-  <%= link_to "お気に入りされたツイート", show_path %>
-  </span>
-</div>
-
-<li>
-  <%= @microposts.find_by(user_id: 2).content %>
-</li>
+<!-- <ul>
+  <% @microposts.each do |post| %>
+    <li>
+      <%= post.content %>
+    </li>
+    <% end %>
+</ul> -->

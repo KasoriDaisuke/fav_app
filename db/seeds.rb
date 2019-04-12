@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Micropost.destroy_all
 Micropost.create(content: "test", user_id: 1, fav_count: 5)
 Micropost.create(content: "test2", user_id: 2, fav_count: 15)
 Micropost.create(content: "test3", user_id: 3, fav_count: 25)
