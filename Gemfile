@@ -64,3 +64,6 @@ gem 'bootstrap-sass', '3.3.1'
 gem 'sprockets', '3.7.2'
 
 gem 'faker', '1.1.2'
+
+gem 'devise'
+gem 'omniauth-twitter'
