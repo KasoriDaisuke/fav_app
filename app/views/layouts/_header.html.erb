@@ -1,6 +1,7 @@
 <header class="header navbar-fixed-top">
   <h1><%= link_to "Fav App", root_path %></h1>
   <ul>
-    <li>Sign in with Twitter</li>
+    <li><%= link_to 'Twitterログイン', user_twitter_omniauth_authorize_path %></li>
+    <li>ログイン状態：<%= user_signed_in? %></li>
   </ul>
 </header>
