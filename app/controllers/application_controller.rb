@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_out_path_for(resource)
+    # Rails.logger.debug("################")
     user_twitter_omniauth_authorize_path # ログアウト後に遷移するpathを設定
-    Rails.logger.debug("################")
   end
 end
