@@ -3,5 +3,6 @@
   <ul>
     <li><%= link_to 'Twitterログイン', user_twitter_omniauth_authorize_path %></li>
     <li>ログイン状態：<%= user_signed_in? %></li>
+    <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
   </ul>
 </header>
