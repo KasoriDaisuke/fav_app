@@ -20,6 +20,10 @@
 </div>
 <% end %>
 
+<% @tweets.tweet.each do |tweet| %>
+<p><%= tweet.text %></p>
+<% end %>
+
 <!-- <ul>
   <% @microposts.each do |post| %>
     <li>

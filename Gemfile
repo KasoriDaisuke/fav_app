@@ -67,3 +67,4 @@ gem 'faker', '1.1.2'
 
 gem 'devise'
 gem 'omniauth-twitter'
+gem 'twitter'
