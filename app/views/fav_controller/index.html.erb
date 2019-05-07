@@ -8,26 +8,14 @@
 </select>
 <% end %>
 
-<% @microposts.each do |post| %>
+<div class="tweet_list">
+<% @tweets.each do |tweet| %>
+ <% if tweet.fav >= 0 %>
 <div class="tweet">
-  <div class= "fav_count">
-  <%= post.fav_count %>
-  <p>Fav</p>
-  </div>
-  <span>
-  <%= link_to post.content, show_path %>
-  </span>
+ <p><%= tweet.tweet %></p>
+ <p class= "fav_count"><%= tweet.fav %>Fav</p>
+ <p><%= tweet.tweet_time %></p>
 </div>
 <% end %>
-
-<% @tweets.tweet.each do |tweet| %>
-<p><%= tweet.text %></p>
 <% end %>
-
-<!-- <ul>
-  <% @microposts.each do |post| %>
-    <li>
-      <%= post.content %>
-    </li>
-    <% end %>
-</ul> -->
+</div>

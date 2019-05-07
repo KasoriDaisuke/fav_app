@@ -37,7 +37,6 @@ h1 {
  background-color: white;
  float: left;
  margin: 10px;
-
 li {
  list-style:none;
 }
@@ -47,7 +46,9 @@ ul{
 }
 
 /* footer */
-
+form{
+  overflow: hidden;
+}
 .footer{
   background-color: black;
   p {
@@ -58,16 +59,18 @@ ul{
 }
 
 /* tweet */
+.tweet_list{
+  margin-top: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
 .tweet{
   overflow: hidden;
+  margin-bottom: 10px;
   padding: 10px;
-  margin: 10px;
   width: auto;
   background-color: white;
 
-  span{
-  float: left;
-}
   a,p {
     font-size: 20px;
     }
