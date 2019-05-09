@@ -3,5 +3,5 @@ Rails.application.routes.draw do
     omniauth_callbacks: 'users/omniauth_callbacks'
   }
   root  'fav_controller#index'
-  match '/show',   to: 'fav_controller#show',   via: 'get'
+  get  'fav_controller/index' => 'fav_controller#get_tweet'
 end
