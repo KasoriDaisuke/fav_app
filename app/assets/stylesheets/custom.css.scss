@@ -3,19 +3,29 @@
 /* universal */
 
 body {
-  background-color: dimgray;
-  padding-top: 100px;
+  background-color: #98DDDE;
+  padding-top: 140px;
 }
 
-h1 {
-  color: white;
+h1{
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+  a {
+    color: #FFDA29;
+  }
+  a:hover {
+    color: #FFDA29;
+    text-decoration: none;
+  }
 }
 
 /* header */
 
 .header{
-  height: 100px;
-  background-color: black;
+  height: 140px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #263056;
 
   ul{
     float: right;
@@ -50,7 +60,7 @@ form{
   overflow: hidden;
 }
 .footer{
-  background-color: black;
+  background-color: #263056;
   p {
     color:white;
     text-align: center;
@@ -59,9 +69,12 @@ form{
 }
 
 /* tweet */
+
+.tweet_area{
+  margin: 10px;
+}
 .tweet_list{
   margin-top: 10px;
-  margin-right: 10px;
   overflow: hidden;
 }
 .tweet{
@@ -69,6 +82,7 @@ form{
   margin-bottom: 10px;
   padding: 10px;
   width: auto;
+  border-radius: 5px; 
   background-color: white;
 
   a,p {

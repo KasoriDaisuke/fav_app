@@ -1,6 +1,15 @@
 <header class="header navbar-fixed-top">
   <h1><%= link_to "Fav App", root_path %></h1>
   <ul>
+  	<li>
+  	<form class="form-inline">
+	 <div class="form-group">
+	   <label>ID検索：</label>
+	   <input type="text" class="form-control" placeholder="@ユーザーID">
+	 </div>
+ 	 <button type="submit" class="btn btn-default">検索</button>
+	</form>
+	</li>
     <li><%= link_to 'Twitterログイン', user_twitter_omniauth_authorize_path %></li>
     <li>ログイン状態：<%= user_signed_in? %></li>
     <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
